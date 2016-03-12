@@ -21,8 +21,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1;
 }
 h1, h2 {
-  font-family: "bodoni-urw",sans-serif;
-  font-weight: 500;
+  font-family: "didot", serif;
 }
 h1 {
   font-size: 3rem;
@@ -37,6 +36,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.main-nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+
 .page-header,
 .page-section,
 .page-footer {
@@ -48,6 +54,7 @@ h3 {
   background-color: $gray;
   position: relative;
   overflow: hidden;
+  min-height: 23rem;
   h1 {
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
@@ -75,7 +82,7 @@ h3 {
     max-width: none;
     height: 100%;
     bottom: -0.75rem;
-    left: 6.25rem;
+    left: 8rem;
   }
 }
 
@@ -87,23 +94,32 @@ h3 {
 }
 .project {
   text-align: center;
-  padding: 3.5rem;
+  padding: 1rem;
   background-color: $gray;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  h3 {
+    margin: 1rem 0 ;
+  }
 }
 .project-color-purple {
-  background-color: $purple;
+  @include bg-color($purple);
 }
 .project-color-yellow {
-  background-color: $yellow;
+  @include bg-color($yellow);
 }
 .project-color-pink {
-  background-color: $pink;
+  @include bg-color($pink);
 }
 .project-color-orange {
-  background-color: $orange;
+  @include bg-color($orange);
 }
 .project-color-blue {
-  background-color: $blue;
+  @include bg-color($blue);
 }
 
 // .page-section

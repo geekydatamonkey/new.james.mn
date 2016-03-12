@@ -1,0 +1,30 @@
+@mixin bg-color($hue) {
+  background-color: $hue;
+
+  &:hover {
+    background-color: mix($hue, $black, 75%);
+    color: lighten($white, 20%);
+  }
+}
+
+@mixin breakpoint($point, $max: 0) {
+  @if $point == desktop {
+    @media (min-width: $desktop-begin) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: $tablet-begin) and (max-width: $tablet-end) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: $mobile-end)  { @content; }
+  }
+  @else if $point == tablet-desktop {
+    @media (min-width: $tablet-begin)  { @content; }
+  }
+  @else if $point == mobile-tablet {
+    @media (max-width: $tablet-end)  { @content; }
+  }
+  // if not a keyword $point is the minpoint and $max is a range
+  @else {
+    @media (min-width: $point) and (max-width: $max) {@content;}
+  }
+}

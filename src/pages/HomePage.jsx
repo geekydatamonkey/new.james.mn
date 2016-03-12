@@ -18,10 +18,10 @@ function getHTML(str) {
 function HomePage() {
   return (
     <div className="container">
+      <nav className="main-nav">
+        <img src={navIcon} />
+      </nav>
       <header className="page-header">
-        <nav className="main-nav">
-          <img src={navIcon} />
-        </nav>
         <img className="headshot" src={headshot} />
         <div className="page-header__contents">
           <h1>
@@ -29,8 +29,8 @@ function HomePage() {
             <span>Johnson</span>
           </h1>
           <ul>
-            <li>Teacher</li>
             <li>Developer</li>
+            <li>Teacher</li>
             <li>Data Geek</li>
           </ul>
         </div>
