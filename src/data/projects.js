@@ -1,30 +1,34 @@
-export default [
+import uuid from 'node-uuid';
+
+const projects = [
   {
-    _id: 1,
     title: 'Nom Nom Num',
+    subtitle: 'In Progress',
     color: 'purple',
   },
   {
-    _id: 2,
     title: 'SISter',
     color: 'yellow',
   },
   {
-    _id: 3,
     title: 'Sustainable Design Online',
     subtitle: 'Minneapolis College of Art and Design',
     color: 'pink',
   },
   {
-      _id: 4,
-      title: 'ProgStar',
-      subtitle: 'Foundation Fighting Blindness',
-      color: 'orange',
-    },
+    title: 'ProgStar',
+    subtitle: 'Foundation Fighting Blindness',
+    color: 'orange',
+  },
   {
-    _id: 5,
     title: 'Public Art Review',
     subtitle: 'Forecast Public Art',
     color: 'blue',
   },
 ];
+
+function generateId(project) {
+  return Object.assign(project, { _id: uuid.v4() });
+}
+
+export default projects.map(generateId);

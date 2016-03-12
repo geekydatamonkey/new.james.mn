@@ -1,3 +1,4 @@
+// colors
 $white: #F5EDF2;
 $black: #000;
 $gray: #CDC3CA;
@@ -6,3 +7,22 @@ $orange: #EDBDAA;
 $yellow: #ECCB96;
 $pink: #DFAAB6;
 $blue: #95A1AF;
+
+
+// typography
+$sans-serif: 'proxima-nova', sans-serif;
+$serif: 'didot', serif;
+$base-font-size: 16px;
+
+
+// Helpers
+@function px2rem($value)  {
+  $value: $value / $base-font-size * 1rem;
+  @return $value;
+}
+
+// Breakpoints
+$mobile-end: px2rem(599px);
+$tablet-begin: px2rem(600px) !default;
+$tablet-end:  px2rem(1023px) !default;
+$desktop-begin: px2rem(1024px) !default;

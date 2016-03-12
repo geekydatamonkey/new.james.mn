@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  font-family: 'proxima-nova', sans-serif;
+  font-size: $base-font-size;
+  font-family: $sans-serif;
   font-weight: 400;
   background: $white;
   line-height: 1.5;
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1;
 }
 h1, h2 {
-  font-family: "didot", serif;
+  font-family: $serif;
 }
 h1 {
   font-size: 3rem;
