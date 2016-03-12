@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList';
 import '../styles/main.scss';
-import navIcon from '../img/icon-menu.svg';
 import headshot from '../img/headshot_2016_transparent.png';
 
 // data
@@ -19,14 +18,13 @@ function HomePage() {
   return (
     <div className="container">
       <nav className="main-nav">
-        <img src={navIcon} />
+        Menu
       </nav>
       <header className="page-header">
         <img className="headshot" src={headshot} />
         <div className="page-header__contents">
           <h1>
-            <span>James</span>
-            <span>Johnson</span>
+            <span>James</span> <span>Johnson</span>
           </h1>
           <ul>
             <li>Developer</li>

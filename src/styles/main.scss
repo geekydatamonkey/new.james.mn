@@ -9,3 +9,12 @@ $fa-font-path: '~font-awesome/fonts';
 @import 'variables';
 @import 'mixins';
 @import 'globals';
+
+// components
+@import 'main-nav';
+@import 'page-footer';
+@import 'page-header';
+@import 'page-section';
+@import 'project-list';
+@import 'project-tile';
+@import 'social-media';

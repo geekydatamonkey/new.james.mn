@@ -1,0 +1,35 @@
+.project-tile {
+  text-align: center;
+  padding: 1rem;
+  background-color: $gray;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 1rem;
+  .project-tile__title {
+    font-size: 2.5rem;
+    hyphens: auto;
+    margin: 1rem 0;
+  }
+  .project-tile__subtitle {
+    font-size: 1.25rem;
+  }
+}
+.project-tile--color-purple {
+  @include bg-color($purple);
+}
+.project-tile--color-yellow {
+  @include bg-color($yellow);
+}
+.project-tile--color-pink {
+  @include bg-color($pink);
+}
+.project-tile--color-orange {
+  @include bg-color($orange);
+}
+.project-tile--color-blue {
+  @include bg-color($blue);
+}

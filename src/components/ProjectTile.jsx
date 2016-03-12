@@ -2,15 +2,15 @@ import React, { PropTypes } from 'react';
 
 function getClassNames(project) {
   return [
-    'project',
-    `project-color-${project.color || 'default'}`,
+    'project-tile',
+    `project-tile--color-${project.color || 'default'}`,
   ].join(' ');
 }
 
 function getSubtitle(project) {
   if (!project.subtitle) return '';
   return (
-    <p className="project__subtitle">
+    <p className="project-tile__subtitle">
       {project.subtitle}
     </p>
   );
@@ -19,7 +19,7 @@ function getSubtitle(project) {
 function ProjectTile({ project }) {
   return (
     <li className={ getClassNames(project) }>
-      <h3 className="project__title">{project.title}</h3>
+      <h3 className="project-tile__title">{project.title}</h3>
       { getSubtitle(project) }
     </li>
   );
