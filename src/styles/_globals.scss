@@ -4,3 +4,137 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 400;
+  background: $white;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+// headings
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+}
+h1, h2 {
+  font-family: "bodoni-urw",sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 1.25em;
+}
+h3 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+.page-header,
+.page-section,
+.page-footer {
+  padding: 1rem;
+}
+
+// .page-header
+.page-header {
+  background-color: rgba(251,178,178,0.1);;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    display: inline-block;
+    padding: 0.25em 0;
+    margin: 0.5em 0;
+    margin-top: 1em;
+    span {
+      display: block;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 3em 0;
+  }
+  li {
+    margin: 0.5rem 0;
+  }
+  .page-header__contents {
+    position: relative;
+  }
+  .headshot {
+    position: absolute;
+    max-width: none;
+    height: 120%;
+    bottom: -16px;
+    left: 0;
+    z-index: -10;
+  }
+}
+
+// .project-list
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  color: $white;
+}
+.project {
+  text-align: center;
+  padding: 3.5rem;
+  background-color: $gray;
+}
+.project-color-purple {
+  background-color: $purple;
+}
+.project-color-yellow {
+  background-color: $yellow;
+}
+.project-color-pink {
+  background-color: $pink;
+}
+.project-color-orange {
+  background-color: $orange;
+}
+.project-color-blue {
+  background-color: $blue;
+}
+
+// .page-section
+.page-section {
+  padding-top: 0;
+}
+
+// .page-footer
+.page-footer {
+  background-color: $black;
+  color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// .social-media
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    a {
+      color: mix($gray, $black, 80%);
+      display: inline-block;
+      padding: 1rem;
+    }
+    a:hover {
+      color: $white;
+    }
+  }
+}

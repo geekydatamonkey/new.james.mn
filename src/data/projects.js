@@ -16,15 +16,15 @@ export default [
     color: 'pink',
   },
   {
-    _id: 4,
-    title: 'ProgStar',
-    subtitle: 'Foundation Fighting Blindness',
-    color: 'blue',
-  },
+      _id: 4,
+      title: 'ProgStar',
+      subtitle: 'Foundation Fighting Blindness',
+      color: 'orange',
+    },
   {
     _id: 5,
     title: 'Public Art Review',
     subtitle: 'Forecast Public Art',
-    color: 'orange',
+    color: 'blue',
   },
 ];

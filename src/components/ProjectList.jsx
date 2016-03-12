@@ -14,7 +14,7 @@ function renderProjectTiles() {
 }
 
 const ProjectList = () => (
-  <section className="page-section">
+  <section className="project-section">
     <h2>Projects</h2>
     <ul className="project-list">
       { renderProjectTiles() }

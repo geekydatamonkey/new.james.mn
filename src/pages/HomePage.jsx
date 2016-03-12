@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectList from '../components/ProjectList';
 import '../styles/main.scss';
 import navIcon from '../img/icon-menu.svg';
+import headshot from '../img/headshot_2016.jpg';
 
 // data
 import profile from 'html!markdown!../data/profile.md';
@@ -21,12 +22,18 @@ function HomePage() {
         <nav className="main-nav">
           <img src={navIcon} />
         </nav>
-        <h1>James Johnson</h1>
-        <ul>
-          <li>Teacher</li>
-          <li>Developer</li>
-          <li>Data Geek</li>
-        </ul>
+        <img className="headshot" src={headshot} />
+        <div className="page-header__contents">
+          <h1>
+            <span>James</span>
+            <span>Johnson</span>
+          </h1>
+          <ul>
+            <li>Teacher</li>
+            <li>Developer</li>
+            <li>Data Geek</li>
+          </ul>
+        </div>
       </header>
       <ProjectList />
       <section className="page-section section-profile"
@@ -35,10 +42,10 @@ function HomePage() {
       <footer className="page-footer">
         <p>copyright { getCurrentYear() }</p>
         <ul className="social-media">
-          <li><i className="fa fa-github"></i></li>
-          <li><i className="fa fa-twitter"></i></li>
-          <li><i className="fa fa-linkedin"></i></li>
-          <li><i className="fa fa-envelope"></i></li>
+          <li><a href="#!"><i className="fa fa-github"></i></a></li>
+          <li><a href="#!"><i className="fa fa-twitter"></i></a></li>
+          <li><a href="#!"><i className="fa fa-linkedin"></i></a></li>
+          <li><a href="#!"><i className="fa fa-envelope"></i></a></li>
         </ul>
       </footer>
     </div>
