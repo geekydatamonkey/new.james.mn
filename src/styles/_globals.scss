@@ -45,7 +45,7 @@ h3 {
 
 // .page-header
 .page-header {
-  background-color: rgba(251,178,178,0.1);;
+  background-color: $gray;
   position: relative;
   overflow: hidden;
   h1 {
@@ -73,10 +73,9 @@ h3 {
   .headshot {
     position: absolute;
     max-width: none;
-    height: 120%;
-    bottom: -16px;
-    left: 0;
-    z-index: -10;
+    height: 100%;
+    bottom: -0.75rem;
+    left: 6.25rem;
   }
 }
 

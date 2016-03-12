@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectList from '../components/ProjectList';
 import '../styles/main.scss';
 import navIcon from '../img/icon-menu.svg';
-import headshot from '../img/headshot_2016.jpg';
+import headshot from '../img/headshot_2016_transparent.png';
 
 // data
 import profile from 'html!markdown!../data/profile.md';
