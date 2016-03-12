@@ -1,0 +1,46 @@
+{
+  "name": "new.james.mn",
+  "version": "2.0.0",
+  "description": "James Johnson website",
+  "main": "index.js",
+  "scripts": {
+    "start": "hjs-dev-server",
+    "prebuild": "npm run clean",
+    "build": "webpack",
+    "clean": "rm -rf public",
+    "serve": "npm run build && http-server ./public",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && surge -p public -d james-mn.surge.sh"
+  },
+  "author": "James Johnson <johnsojr@gmail.com> (http://james.mn/)",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel": "^6.5.2",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.0",
+    "hjs-webpack": "^7.3.2",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.1",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "surge": "^0.17.7",
+    "url-loader": "^0.5.7",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "ampersand-router": "^3.0.2",
+    "normalize.css": "^3.0.3",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
