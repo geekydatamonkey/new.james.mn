@@ -1,89 +1,11 @@
-// .page-header
 .page-header {
-  background-color: $gray;
-  position: relative;
-  overflow: hidden;
-  min-height: 23rem;
+  background: url('../img/bg-page-header.png') repeat-x;
+  background-size: auto 100%;
+  padding: 1em;
   h1 {
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-    display: inline-block;
-    padding: 0.25em 0;
-    margin: 0.5em 0;
-    margin-top: 1em;
-    span {
-      display: block;
-    }
-    @media (min-width: px2rem(478px)) {
-      font-size: 3.5rem;
-    }
-    @media (min-width: px2rem(550px)) {
-      font-size: 4.5rem;
-    }
+    font-size: 24/16rem;
+    line-height: 1.2;
+    text-align: center;
+    color: hsla(0,0,0%,0.75);
   }
-  ul {
-    font-size: 1.25rem;
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0 3em 0;
-  }
-  li {
-    margin: 0.5rem 0;
-  }
-  .page-header__contents {
-    position: relative;
-    @media (min-width: px2rem(700px)) {
-      margin-left: 10%;
-    }
-  }
-  .headshot {
-    position: absolute;
-    max-width: none;
-    height: 100%;
-    bottom: -0.75rem;
-    left: 8rem;
-    @media (min-width: px2rem(450px)){
-      left: auto;
-      right: -10rem;
-    }
-  }
-  @media (min-width: 769px) {
-    min-height: 32rem;
-    .headshot {
-      left: 45%;
-      right: auto;
-    }
-    .page-header__contents {
-      // border: 1px solid $black;
-      position: absolute;
-      width: 2/3 * 100%;
-      //margin: 2em auto;
-      top: 50%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      padding: 2em 6em;
-    }
-    // h1 {
-    //   margin: 0;
-    //   border: none;
-    // }
-  }
-  @media (min-width: px2rem(1200px)) {
-    .page-header__contents {
-      border: 1px solid $black;
-      position: static;
-      margin: 2em auto;
-      transform: none;
-      padding: 2em 4em;
-    }
-    h1 {
-      margin: 0;
-      border: none;
-      font-size: 6rem;
-    }
-    ul {
-      font-size: 2rem;
-    }
-  }
-
 }

@@ -1,44 +1,38 @@
 import React from 'react';
-import ProjectList from '../components/ProjectList';
 import '../styles/main.scss';
-import headshot from '../img/headshot_2016_transparent.png';
-
-// data
-import profile from 'html!markdown!../data/profile.md';
-
-function getCurrentYear() {
-  return (new Date()).getFullYear();
-}
-
-function getHTML(str) {
-  return { __html: str };
-}
+import blurbImg from '../img/bg-deptofcc.png';
 
 function HomePage() {
   return (
     <div className="container">
-      <nav className="main-nav">
-        Menu
-      </nav>
       <header className="page-header">
-        <img className="headshot" src={headshot} />
-        <div className="page-header__contents">
-          <h1>
-            <span>James</span> <span>Johnson</span>
-          </h1>
-          <ul>
-            <li>Developer</li>
-            <li>Teacher</li>
-            <li>Data Geek</li>
-          </ul>
-        </div>
+        <h1>
+          <span className="line">Hi.</span>
+          <span className="line">I'm James.</span>
+          <span className="line">I make things.</span>
+        </h1>
       </header>
-      <ProjectList />
-      <section className="page-section section-profile"
-        dangerouslySetInnerHTML={ getHTML(profile) }
-      />
+      <main>
+        <section className="page-section">
+          <h2 className="section-title">Work</h2>
+          <article className="blurb">
+            <img
+              className="blurb-img"
+              src={blurbImg}
+              alt="smeared out website"
+            />
+            <div className="blurb-content">
+              <h3 className="blurb-title">
+                Dept. of Creative Caffeination
+              </h3>
+              <a className="blurb-link" href="#!">
+                &rarr;
+              </a>
+            </div>
+          </article>
+        </section>
+      </main>
       <footer className="page-footer">
-        <p>copyright { getCurrentYear() }</p>
         <ul className="social-media">
           <li><a href="#!"><i className="fa fa-github"></i></a></li>
           <li><a href="#!"><i className="fa fa-twitter"></i></a></li>

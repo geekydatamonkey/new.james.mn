@@ -5,16 +5,21 @@
 $fa-font-path: '~font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
 
-// globals and utils
-@import 'variables';
-@import 'mixins';
+// // globals and utils
+// @import 'variables';
+// @import 'mixins';
+@import 'fonts';
 @import 'globals';
-
+//
 // components
-@import 'main-nav';
-@import 'page-footer';
-@import 'page-header';
-@import 'page-section';
-@import 'project-list';
-@import 'project-tile';
-@import 'social-media';
+@import "blurb";
+@import "page-footer";
+@import "page-header";
+@import "page-section";
+// @import 'main-nav';
+// @import 'page-footer';
+// @import 'page-header';
+// @import 'page-section';
+// @import 'project-list';
+// @import 'project-tile';
+// @import 'social-media';
