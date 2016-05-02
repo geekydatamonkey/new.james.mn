@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import BlurbCollection from '../components/BlurbCollection';
 import '../styles/main.scss';
-import blurbImg from '../img/bg-deptofcc.png';
+import siteData from '../data/siteData';
+
+const { workCollection } = siteData;
 
 function HomePage() {
   return (
@@ -13,24 +16,7 @@ function HomePage() {
         </h1>
       </header>
       <main>
-        <section className="page-section">
-          <h2 className="section-title">Work</h2>
-          <article className="blurb">
-            <img
-              className="blurb-img"
-              src={blurbImg}
-              alt="smeared out website"
-            />
-            <div className="blurb-content">
-              <h3 className="blurb-title">
-                Dept. of Creative Caffeination
-              </h3>
-              <a className="blurb-link" href="#!">
-                &rarr;
-              </a>
-            </div>
-          </article>
-        </section>
+        <BlurbCollection title="Work" collection={workCollection} />
       </main>
       <footer className="page-footer">
         <ul className="social-media">
@@ -43,5 +29,9 @@ function HomePage() {
     </div>
   );
 }
+
+HomePage.propTypes = {
+  workCollection: PropTypes.array.isRequired,
+};
 
 export default HomePage;
